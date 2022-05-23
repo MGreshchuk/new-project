@@ -1,14 +1,38 @@
-.grid-container {
-    display: grid;
-    grid-template-columns: minmax(285px, auto) 1080px;
-    grid-column-gap: 20px;
-    margin: 20px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
+.heading-1 {
+    word-wrap: break-word;
+    text-align: start;
+    font-size: 1.5rem;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.wrap-item-1 {
+    margin: 30px;
+}
+
+.wrap-item-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+ 
 .card {
-    height: 345px;
+    text-align: center;
 }
 
-.jumbotron {
-    height: 345px;
+.current-location-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: #343a40;;
+    font-style: italic;
 }

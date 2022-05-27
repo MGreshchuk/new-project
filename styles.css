@@ -6,7 +6,7 @@
 .heading-1 {
     word-wrap: break-word;
     text-align: start;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
 }
 
 .wrapper {
@@ -15,6 +15,10 @@
 
 .wrap-item-1 {
     margin: 30px;
+}
+
+.text-guide {
+    font-style: italic;
 }
 
 .wrap-item-2 {
@@ -35,4 +39,20 @@
     margin: 10px;
     color: #343a40;;
     font-style: italic;
+}
+
+@media (max-width: 540px) {
+    .heading-1 {
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    .jumbotron {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .current-location-text {
+        font-size: 30px;
+    }
 }

@@ -61,8 +61,6 @@ body {
 
     .card-1, .card-2, .card-3 {
         overflow: auto;
-        /* display: flex;
-        justify-content: center; */
         align-items: center;
         max-width: 100%;
         margin: 16px;

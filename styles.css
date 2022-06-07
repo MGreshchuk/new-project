@@ -22,6 +22,13 @@ body {
     margin: 32px 32px 16px;
 }
 
+.location-text {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0 8px;
+    font-style: italic;
+}
+
 .wrap-item-2 {
     display: flex;
     justify-content: center;
@@ -40,11 +47,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 32px;
+    margin: 8px 0 32px;
     font-style: italic;
 }
 
 @media (max-width: 540px) {
+
     .heading-1 {
         text-align: center;
         font-size: 24px;
@@ -59,15 +67,16 @@ body {
         font-size: 30px;
     }
 
-    .card-1, .card-2, .card-3 {
+    .card {
         overflow: auto;
         align-items: center;
-        max-width: 100%;
-        margin: 16px;
+        margin: 2px;
         font-size: 12px;
+        max-width: 100%;
     }
 
     .card-text {
         font-style: italic;
     }
+
 }

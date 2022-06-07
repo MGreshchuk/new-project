@@ -3,10 +3,15 @@
     padding: 0;
 }
 
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .heading-1 {
     word-wrap: break-word;
     text-align: start;
-    /* font-size: 1.5rem; */
+    font-style: italic;
 }
 
 .wrapper {
@@ -14,30 +19,28 @@
 }
 
 .wrap-item-1 {
-    margin: 30px;
-}
-
-.text-guide {
-    font-style: italic;
+    margin: 32px 32px 16px;
 }
 
 .wrap-item-2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
 }
  
 .card {
     text-align: center;
 }
 
-.current-location-text {
+.card-1, .card-2, .card-3{
+    margin: 32px;
+}
+
+.guide-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    color: #343a40;;
+    margin-bottom: 32px;
     font-style: italic;
 }
 
@@ -54,5 +57,19 @@
 
     .current-location-text {
         font-size: 30px;
+    }
+
+    .card-1, .card-2, .card-3 {
+        overflow: auto;
+        /* display: flex;
+        justify-content: center; */
+        align-items: center;
+        max-width: 100%;
+        margin: 16px;
+        font-size: 12px;
+    }
+
+    .card-text {
+        font-style: italic;
     }
 }

@@ -22,6 +22,8 @@ body {
     margin: 32px 32px 16px;
 }
 
+/* card block */
+
 .location-text {
     display: flex;
     justify-content: center;
@@ -39,6 +41,15 @@ body {
     text-align: center;
 }
 
+.card-temperature {
+    font-size: 24px;
+}
+
+.card-date {
+    font-style: italic;
+    font-size: 12px;
+}
+
 .card-1, .card-2, .card-3{
     margin: 32px;
 }
@@ -50,6 +61,8 @@ body {
     margin: 8px 0 32px;
     font-style: italic;
 }
+
+/* card block */
 
 @media (max-width: 540px) {
 
@@ -63,20 +76,12 @@ body {
         font-size: 24px;
     }
 
-    .current-location-text {
-        font-size: 30px;
-    }
-
     .card {
         overflow: auto;
         align-items: center;
         margin: 2px;
         font-size: 12px;
         max-width: 100%;
-    }
-
-    .card-text {
-        font-style: italic;
     }
 
 }

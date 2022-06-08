@@ -64,6 +64,32 @@ body {
 
 /* card block */
 
+footer {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.logo-link-1 {
+    font-size: 24px;
+    color: #00acee;
+    margin: 10px;
+}
+
+.logo-link-2 {
+    font-size: 24px;
+    color: #4267B2;
+    margin: 10px;
+}
+
+.logo-link-3 {
+    font-size: 24px;
+    color: #0072b1;
+    margin: 10px;
+}
+
 @media (max-width: 540px) {
 
     .heading-1 {
@@ -82,6 +108,10 @@ body {
         margin: 2px;
         font-size: 12px;
         max-width: 100%;
+    }
+
+    .card-temperature {
+        font-size: 18px;
     }
 
 }

@@ -74,23 +74,49 @@ footer {
 
 .logo-link-1 {
     font-size: 24px;
-    color: #00acee;
+    color: #4267B2;
     margin: 10px;
 }
 
 .logo-link-2 {
     font-size: 24px;
-    color: #4267B2;
+    color: #00acee;
     margin: 10px;
 }
 
 .logo-link-3 {
     font-size: 24px;
+    color: #b23cfd;
+    margin: 10px;
+}
+
+.logo-link-4 {
+    font-size: 24px;
     color: #0072b1;
     margin: 10px;
 }
 
+.logo-link-5 {
+    font-size: 24px;
+    color: #262626;
+    margin: 10px;
+}
+
 @media (max-width: 540px) {
+
+    .navbar {
+        display: flex;
+        justify-content: center!important;
+    }
+
+    .navbar-brand {
+        margin: 4px;
+    }
+
+    .form-inline {
+        display: flex;
+        justify-content: center;
+    }
 
     .heading-1 {
         text-align: center;

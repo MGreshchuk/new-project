@@ -19,21 +19,33 @@ body {
 
 /* card block */
 
-.location-text {
-    display: flex;
-    justify-content: center;
-    margin: 32px 0 8px;
-    font-style: italic;
-}
-
 .wrap-item-2 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+h2.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+    font-weight: 300;
+}
+  
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
  
 .card {
     text-align: center;
+    padding: 30px;
+    margin-bottom: 32px!important;
 }
 
 .card-temperature {
@@ -43,10 +55,6 @@ body {
 .card-date {
     font-style: italic;
     font-size: 12px;
-}
-
-.card-1, .card-2, .card-3{
-    margin: 32px;
 }
 
 .guide-button {
@@ -82,8 +90,8 @@ footer {
 .logo-link-3 {
     font-size: 24px;
     color: transparent;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: radial-gradient(circle at 30% 107%, #ffdc7d 0%, #ffdc7d 5%, #f46f30 45%, #c32aa3 60%, #4c5fd7 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #ffdc7d 0%, #ffdc7d 5%, #f46f30 45%, #c32aa3 60%, #4c5fd7 90%);
     background-clip: text;
     -webkit-background-clip: text;
     margin: 10px;
@@ -109,7 +117,7 @@ footer {
     }
 
     .navbar-brand {
-        font-size: 24px!important;
+        font-size: 36px!important;
         margin: 4px;
     }
 
@@ -120,6 +128,10 @@ footer {
     .form-inline {
         display: flex;
         justify-content: center;
+    }
+
+    .wrap-item-1 {
+        margin: 32px 2px 16px!important;
     }
 
     .heading-1 {
@@ -150,5 +162,22 @@ footer {
     .navbar {
         display: flex!important;
         justify-content: space-between!important;
+    }
+
+    .navbar-brand {
+        font-size: 24px!important;
+        margin: 4px;
+    }
+}
+
+@media (width: 540px) {
+    .navbar {
+        display: flex;
+        justify-content: center!important;
+    }
+
+    .navbar-brand {
+        font-size: 24px!important;
+        margin: 4px;
     }
 }

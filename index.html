@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+        <script src="main.js"></script>
         <title>WeatherMate</title>
     </head>
     <body>
@@ -36,11 +37,23 @@
             </div>
           </div>
 
-          <p class="location-text">Amsterdam, Netherlands</p>
-
           <div class="wrap-item-2">
-            <div class="card card-1" >
+            <div class="card card-1">
+              <div class="weather loading">
+                <h1 class="city heading-1">Weather in Amsterdam</h1>
+                <h2 class="temp">51°C</h2>
+                <div class="flex">
+                  <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                  <div class="description lead">Cloudy</div>
+                </div>
+                <div class="humidity lead">Humidity: 60%</div>
+                <div class="wind lead">Wind speed: 6.2 km/h</div>
+              </div>
+            </div>
+          </div>
+            <!-- <div class="card card-1" >
               <img class="card-img-top" src="./images/cloud-sunny.png" alt="Cloud-Sunny">
+              <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
               <div class="card-body">
                 <h5 class="card-temperature">20°C</h5>
                 <p class="card-date">08.06</p>
@@ -59,12 +72,12 @@
                 <h5 class="card-temperature">18°C</h5>
                 <p class="card-date">10.06</p>
               </div>
-            </div>
+            </div> -->
           </div>
 
-          <div class="guide-button">
+          <!-- <div class="guide-button">
             <a href="#" class="btn btn-outline-info">Learn More...</a>
-          </div>
+          </div> -->
         
         <!-- footer opened -->
         <footer class="bg-light text-center">
@@ -92,11 +105,11 @@
                     <p class="pt-2">
                       <strong style="font-style: italic;">Our Socials</strong>
                     </p>
-                    <a href="#"><i class='fab fa-facebook-square logo-link-1'></i></a>
-                    <a href="#"><i class='fab fa-twitter logo-link-2'></i></a>
-                    <a href="#"><i class='fab fa-instagram logo-link-3'></i></a>
-                    <a href="#"><i class='fab fa-linkedin-in logo-link-4'></i></a>
-                    <a href="#"><i class='fab fa-github logo-link-5'></i></a>
+                    <a target="_blank" href="https://www.facebook.com/zelenskiy.official"><i class='fab fa-facebook-square logo-link-1'></i></a>
+                    <a target="_blank" href="https://twitter.com/elonmusk"><i class='fab fa-twitter logo-link-2'></i></a>
+                    <a target="_blank" href="https://www.instagram.com/drclxw/"><i class='fab fa-instagram logo-link-3'></i></a>
+                    <a target="_blank" href="https://ua.linkedin.com/in/maksym-greshchuk-ba2466221/ru"><i class='fab fa-linkedin-in logo-link-4'></i></a>
+                    <a target="_blank" href="https://github.com/MGreshchuk/new-project"><i class='fab fa-github logo-link-5'></i></a>
                 </div>
                 </div>
               </form>
@@ -114,7 +127,6 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      <script src="main.js"></script>
 
     </body>
 </html>

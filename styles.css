@@ -23,6 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 32px 32px 0px;
 }
 
 h2.temp {
@@ -130,10 +131,6 @@ footer {
         justify-content: center;
     }
 
-    .wrap-item-1 {
-        margin: 32px 2px 16px!important;
-    }
-
     .heading-1 {
         text-align: center;
         font-size: 24px;
@@ -154,6 +151,14 @@ footer {
 
     .card-temperature {
         font-size: 18px;
+    }
+
+    .humidity {
+        font-size: 14px!important;
+    }
+
+    .wind {
+        font-size: 14px!important;
     }
 
 }

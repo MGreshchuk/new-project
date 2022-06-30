@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="./styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-        <script src="main.js"></script>
+        <script src="main.js" defer></script>
         <title>WeatherMate</title>
     </head>
     <body>
@@ -21,8 +21,8 @@
             <nav class="navbar navbar-light">
               <a class="navbar-brand" style="font-style: italic;">WeatherMate</a>
               <form class="form-inline">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
-                  <button class="btn btn-outline-primary my-2 my-sm-0 button-search" type="submit">Search</button>
+                <input class="search-bar form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0 button-search" type="submit">Search</button>
               </form>
             </nav>
           </div>
@@ -41,13 +41,13 @@
             <div class="card card-1">
               <div class="weather loading">
                 <h1 class="city heading-1">Weather in Amsterdam</h1>
-                <h2 class="temp">51°C</h2>
+                <h2 class="temp">21°C</h2>
                 <div class="flex">
-                  <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                  <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="icon" />
                   <div class="description lead">Cloudy</div>
                 </div>
-                <div class="humidity lead">Humidity: 60%</div>
-                <div class="wind lead">Wind speed: 6.2 km/h</div>
+                <div class="humidity lead">Humidity: 67%</div>
+                <div class="wind lead">Wind speed: 5.14 km/h</div>
               </div>
             </div>
           </div>

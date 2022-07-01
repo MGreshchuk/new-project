@@ -1,7 +1,13 @@
 function fetchWeather(city) {
     const apiKey = "09c5c2dfec3b4287df8859c27e18db3c";
     fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&appid=" + apiKey) 
-    .then((response) => response.json())
+    .then((response) => {
+        if (!response.ok) {
+          alert("No weather found.");
+          throw new Error("No weather found.");
+        }
+        return response.json();
+      })
     .then((data) => this.displayWeather(data))
 }
 
@@ -23,5 +29,5 @@ function search() {
 }
 
 document.querySelector(".button-search").addEventListener("click", function () {
-    this.search();
+    search();
 })

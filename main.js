@@ -8,7 +8,7 @@ function fetchWeather(city) {
         }
         return response.json();
       })
-    .then((data) => this.displayWeather(data))
+    .then((data) => displayWeather(data))
 }
 
 function displayWeather(data) {
@@ -25,9 +25,29 @@ function displayWeather(data) {
 }
 
 function search() {
-    this.fetchWeather(document.querySelector(".search-bar").value);
+    const searchValue = document.querySelector(".search-bar").value;
+    fetchWeather(searchValue);
 }
 
 document.querySelector(".button-search").addEventListener("click", function () {
     search();
-})
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    fetchWeather("Ivano-Frankivsk");
+});
+
+document.querySelector(".guide-button").addEventListener("click", function () {
+    // document.querySelector(".weather").style.display = "none";
+    
+    // function hideCard() {
+    //     const card = document.getElementById("card");
+    //     card.style.display = "none";
+    // }
+    
+    function showCards() {
+        const cards = document.getElementById("3-day");
+        cards.style.display = "flex";  	 
+    }
+    showCards();
+});

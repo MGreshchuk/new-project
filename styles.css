@@ -3,10 +3,11 @@ body {
     overflow-x: hidden;
 }
 
-.heading-1 {
+.welcome {
     word-wrap: break-word;
     text-align: start;
     font-style: italic;
+    font-size: 24px!important;
 }
 
 .wrapper {
@@ -23,7 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 32px 32px 0px;
+    margin: 8px 32px 0px;
 }
 
 h2.temp {
@@ -46,7 +47,14 @@ h2.temp {
 .card {
     text-align: center;
     padding: 30px;
-    margin-bottom: 32px!important;
+}
+
+.card-3 {
+    margin: 0px 8px 0px;
+}
+
+.heading-1 {
+    text-align: center;
 }
 
 .card-temperature {
@@ -133,32 +141,26 @@ footer {
 
     .heading-1 {
         text-align: center;
-        font-size: 24px;
+        font-size: 14px;
     }
     
     .jumbotron {
         text-align: center;
-        font-size: 24px;
+    }
+
+    .lead {
+        font-size: 8px!important;
     }
 
     .card {
-        overflow: auto;
+        display: flex!important;
+        justify-content: center;
         align-items: center;
-        margin: 2px;
+        text-align: center;
         font-size: 12px;
         max-width: 100%;
-    }
-
-    .card-temperature {
-        font-size: 18px;
-    }
-
-    .humidity {
-        font-size: 14px!important;
-    }
-
-    .wind {
-        font-size: 14px!important;
+        padding: 8px!important;
+        height: 100%;
     }
 
 }

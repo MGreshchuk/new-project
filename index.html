@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="./styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-        <script src="main.js" defer></script>
         <title>WeatherMate</title>
     </head>
     <body>
@@ -23,7 +22,7 @@
               <div class="search">
                 <form class="form-inline">
                   <input class="search-bar form-control mr-sm-2" type="text" placeholder="Search...">
-                  <button class="btn btn-outline-primary my-2 my-sm-0 button-search" type="submit">Search</button>
+                  <button class="button-search btn btn-outline-primary my-2 my-sm-0" type="button">Search</button>
                 </form>
               </div>
             </nav>
@@ -32,54 +31,67 @@
         </header>
         <!-- header closed -->
 
-          <div class="wrap-item-1">
-            <div class="jumbotron">
-                <h1 class="heading-1">Hi, it's WeatherMate!</h1>
-                <p class="lead">Here you will find the most up-to-date weather forecasts in your area!</p>
+        <div class="wrap-item-1">
+          <div class="jumbotron">
+            <h1 class="welcome">Hi, it's WeatherMate!</h1>
+            <p class="lead">Here you will find the most up-to-date weather forecasts in your area!</p>
+          </div>
+        </div>
+
+        <div class="wrap-item-2">
+          <div class="card card-1" id="card">
+            <div class="weather loading">
+              <h1 class="city heading-1">Weather in Amsterdam</h1>
+              <h2 class="temp lead">21°C</h2>
+              <div class="flex">
+                <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="icon" />
+                <div class="description lead">Cloudy</div>
+              </div>
+              <div class="humidity lead">Humidity: 67%</div>
+              <div class="wind lead">Wind speed: 5.14 km/h</div>
             </div>
           </div>
+        </div>
 
-          <div class="wrap-item-2">
-            <div class="card card-1">
-              <div class="weather loading">
-                <h1 class="city heading-1">Weather in Amsterdam</h1>
-                <h2 class="temp">21°C</h2>
+        <div class="wrap-item-2">
+          <div id="3-day" style="display: none;">
+            <div class="card card-2">
+              <div class="weather-forecast-item">
+                <h1 class="day heading-1">Monday</h1>
+                <h2 class="temp lead">Night - 25.6&#176; C</h2>
+                <h2 class="temp lead">Day - 35.6&#176; C</h2>
                 <div class="flex">
-                  <img src="https://openweathermap.org/img/wn/04d.png" alt="" class="icon" />
-                  <div class="description lead">Cloudy</div>
+                  <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" class="w-icon" />
                 </div>
-                <div class="humidity lead">Humidity: 67%</div>
-                <div class="wind lead">Wind speed: 5.14 km/h</div>
+              </div>
+            </div>
+            <div class="card card-3">
+              <div class="weather-forecast-item">
+                <h1 class="city heading-1">Tuesday</h1>
+                <h2 class="temp lead">Night - 25.6&#176; C</h2>
+                <h2 class="temp lead">Day - 35.6&#176; C</h2>
+                <div class="flex">
+                  <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" class="w-icon" />
+                </div>
+              </div>
+            </div>
+            <div class="card card-4">
+              <div class="weather-forecast-item">
+                <h1 class="city heading-1">Wednesday</h1>
+                <h2 class="temp lead">Night - 25.6&#176; C</h2>
+                <h2 class="temp lead">Day - 35.6&#176; C</h2>
+                <div class="flex">
+                  <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" class="w-icon" />
+                </div>
               </div>
             </div>
           </div>
-            <!-- <div class="card card-1" >
-              <img class="card-img-top" src="./images/cloud-sunny.png" alt="Cloud-Sunny">
-              <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
-              <div class="card-body">
-                <h5 class="card-temperature">20°C</h5>
-                <p class="card-date">08.06</p>
-              </div>
-            </div>
-            <div class="card card-2" >
-              <img class="card-img-top" src="./images/cloud-rainy.png" alt="Cloud-Rainy">
-              <div class="card-body">
-                <h5 class="card-temperature">16°C</h5>
-                <p class="card-date">09.06</p>
-              </div>
-            </div>
-            <div class="card card-3" >
-              <img class="card-img-top" src="./images/cloud-thunder.png" alt="Cloud-Thunder">
-              <div class="card-body">
-                <h5 class="card-temperature">18°C</h5>
-                <p class="card-date">10.06</p>
-              </div>
-            </div> -->
-          </div>
+        </div>
+      </div>
 
-          <!-- <div class="guide-button">
+          <div class="guide-button">
             <a href="#" class="btn btn-outline-info">Learn More...</a>
-          </div> -->
+          </div>
         
         <!-- footer opened -->
         <footer class="bg-light text-center">
@@ -129,6 +141,6 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+      <script src="main.js"></script>
     </body>
 </html>
